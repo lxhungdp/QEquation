@@ -3,7 +3,7 @@ import QuadraticEquation from './QuadraticEquation';
 import TwoEquations from './TwoEquations';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState('quadratic'); // Default page is Quadratic Equation
+  const [currentPage, setCurrentPage] = useState('quadratic'); // Default page is Quadratic Equation hhhh
 
   return (
     <div>
