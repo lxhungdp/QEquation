@@ -10,7 +10,7 @@ export default function TwoEquations() {
   const [c2, setC2] = useState('');
   const [result, setResult] = useState(null);
   const [records, setRecords] = useState([]);
-  const API_URL = 'http://localhost:5000';
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const fetchRecords = async () => {
     const res = await axios.get(`${API_URL}/twoequations/records`);

@@ -8,7 +8,7 @@ export default function QuadraticEquation() {
     const [result, setResult] = useState(null);
     const [records, setRecords] = useState([]);
   
-    const API_URL = 'http://localhost:5000'; // change to live server later
+    const API_URL = process.env.REACT_APP_API_URL; // change to live server later
   
     const fetchRecords = async () => {
       const res = await axios.get(`${API_URL}/records`);
